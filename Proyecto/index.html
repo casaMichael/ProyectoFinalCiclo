@@ -42,101 +42,113 @@
     </section>
 
     <main class="contenedor sombra">
-      <h2>Cursos</h2>
+      <h2>Mis cursos</h2>
 
-      <section>
-        <h3>PHP.</h3>
-        <img src="img/puzzle.png" />
-        <p>
-          ¿Qué es PHP y cómo funciona? PHP es un lenguaje de programación
-          destinado a desarrollar aplicaciones para la web y crear páginas web,
-          favoreciendo la conexión entre los servidores y la interfaz de
-          usuario. Entre los factores que hicieron que PHP se volviera tan
-          popular, se destaca el hecho de que es de código abierto. Esto
-          significa que cualquiera puede hacer cambios en su estructura. En la
-          práctica, esto representa dos cosas importantes: es de código abierto,
-          no hay restricciones de uso vinculadas a los derechos. El usuario
-          puede usar PHP para programar en cualquier proyecto y comercializarlo
-          sin problemas. está en constante perfeccionamiento, gracias a una
-          comunidad de desarrolladores proactiva y comprometida.
-        </p>
-      </section>
+      <div class="cursos">
+        <section class="curso">
+          <h3>PHP.</h3>
+          <div class="imagen">
+            <img src="img/puzzle.png" />
+          </div>
+          <p>
+            ¿Qué es PHP y cómo funciona? PHP es un lenguaje de programación
+            destinado a desarrollar aplicaciones para la web y crear páginas web,
+            favoreciendo la conexión entre los servidores y la interfaz de
+            usuario. Entre los factores que hicieron que PHP se volviera tan
+            popular, se destaca el hecho de que es de código abierto. Esto
+            significa que cualquiera puede hacer cambios en su estructura. En la
+            práctica, esto representa dos cosas importantes: es de código abierto,
+            no hay restricciones de uso vinculadas a los derechos. El usuario
+            puede usar PHP para programar en cualquier proyecto y comercializarlo
+            sin problemas. está en constante perfeccionamiento, gracias a una
+            comunidad de desarrolladores proactiva y comprometida.
+          </p>
+        </section>
 
-      <section>
-        <h3>JavaScript.</h3>
-        <img src="img/up.png" />
-        <img src="img/download.png" />
-        <p>
-          JavaScript (abreviado comúnmente JS) es un lenguaje de programación
-          interpretado, dialecto del estándar ECMAScript. Se define como
-          orientado a objetos,2​ basado en prototipos, imperativo, débilmente
-          tipado y dinámico. Se utiliza principalmente del lado del cliente,
-          implementado como parte de un navegador web permitiendo mejoras en la
-          interfaz de usuario y páginas web dinámicas3​ y JavaScript del lado
-          del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones
-          externas a la web, por ejemplo en documentos PDF, aplicaciones de
-          escritorio (mayoritariamente widgets) es también significativo.
-        </p>
-      </section>
+        <section class="curso">
+          <h3>JavaScript.</h3>
+          <div class="imagen">
+            <img src="img/up.png" />
+            <img src="img/download.png" />
+          </div>
+          <p>
+            JavaScript (abreviado comúnmente JS) es un lenguaje de programación
+            interpretado, dialecto del estándar ECMAScript. Se define como
+            orientado a objetos,2​ basado en prototipos, imperativo, débilmente
+            tipado y dinámico. Se utiliza principalmente del lado del cliente,
+            implementado como parte de un navegador web permitiendo mejoras en la
+            interfaz de usuario y páginas web dinámicas3​ y JavaScript del lado
+            del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones
+            externas a la web, por ejemplo en documentos PDF, aplicaciones de
+            escritorio (mayoritariamente widgets) es también significativo.
+          </p>
+        </section>
 
-      <section>
-        <h3>HTML5 y CSS3.</h3>
-        <img src="img/id_card.png" />
-        <p>
-          HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión
-          importante del lenguaje básico de la World Wide Web, HTML. HTML5
-          específica dos variantes de sintaxis para HTML: una «clásica», HTML
-          (text/html), conocida como HTML5, y una variante XHTML conocida como
-          sintaxis XHTML 5 que deberá servirse con sintaxis XML
-          (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML
-          se han desarrollado en paralelo CSS (siglas en inglés de Cascading
-          Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje
-          de diseño gráfico para definir y crear la presentación de un documento
-          estructurado escrito en un lenguaje de marcado.2​ Es muy usado para
-          establecer el diseño visual de los documentos web, e interfaces de
-          usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a
-          cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera.
-        </p>
-      </section>
+        <section class="curso">
+          <h3>HTML5 y CSS3.</h3>
+          <div class="imagen">
+            <img src="img/id_card.png" />
+          </div>
+          <p>
+            HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión
+            importante del lenguaje básico de la World Wide Web, HTML. HTML5
+            específica dos variantes de sintaxis para HTML: una «clásica», HTML
+            (text/html), conocida como HTML5, y una variante XHTML conocida como
+            sintaxis XHTML 5 que deberá servirse con sintaxis XML
+            (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML
+            se han desarrollado en paralelo CSS (siglas en inglés de Cascading
+            Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje
+            de diseño gráfico para definir y crear la presentación de un documento
+            estructurado escrito en un lenguaje de marcado.2​ Es muy usado para
+            establecer el diseño visual de los documentos web, e interfaces de
+            usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a
+            cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera.
+          </p>
+        </section>
+      </div> <!--Cierre de la clase de cursos -->
+
     </main>
 
     <section>
       <h2>Contacto</h2>
 
-      <form>
+      <form class="formulario">
         <fieldset>
           <legend>
             <p>Contactanos con este formulario</p>
           </legend>
+          <div class="contenedor-campos">
+            <div class="campo">
+              <label>Nombre:</label>
+              <input class="input-text" type="text" placeholder="Nombre" />
+            </div>
 
-          <div>
-            <label>Nombre:</label>
-            <input type="text" placeholder="Nombre" />
+            <div class="campo">
+              <label>Tu Telefono:</label>
+              <input class="input-text" type="tel" placeholder="Telefono" />
+            </div>
+
+            <div class="campo">
+              <label>Correo electronico:</label>
+              <input class="input-text" type="email" placeholder="Correo electronico" />
+            </div>
+
+            <div class="campo">
+              <label>Mensaje</label>
+              <textarea class="input-text"></textarea>
+            </div>
+
           </div>
-          <div>
-            <label>Tu Telefono:</label>
-            <input type="tel" placeholder="Telefono" />
+
+          <div class="alinear-derecha flex">
+            <input class="boton w-sm-100" type="submit" value="Enviar" />
           </div>
-          <label>Correo electronico:</label>
-          <input type="email" placeholder="Correo electronico" />
-          <div>
-            <label>Mensaje:</label>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="..."
-            ></textarea>
-          </div>
-          <div>
-            <input type="submit" value="ENVIAR" />
-          </div>
+
         </fieldset>
       </form>
     </section>
 
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. Michael & Yosair DAW2</p>
     </footer>
   </body>
