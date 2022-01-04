@@ -1,0 +1,39 @@
+Index: Proyecto/css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>:root {\n  /*pseudoelemento*/\n  /*Customer property*/\n  --blanco: #ffffff;\n  --obscuro: #212121;\n  --primario: #ffc107;\n  --secundario: #0097a7;\n  --gris: #757575;\n  --grisClaro: #DFE9F3\n}\n\nhtml {\n  font-size: 62.5%;\n  box-sizing: border-box;/*no afectara al padding en cualquier cambio futur*/\n  scroll-snap-type: y mandatory;\n}\n/** Scroll Snap, nos permite que al hacer scroll que se detenga en cada section que marquemos **/\n.cursos, .navegacion-principal, .formulario{\n  scroll-snap-align: center;\n  scroll-snap-stop: always;\n}\n\n*,*:before,*:after{ /*Selector * universal afecta a todos los elementos*/\n  box-sizing: inherit;\n}\n\nbody {\n  font-size: 16px;\n  font-family: \"Krub\", sans-serif;\n  /* Este tipo de texto aplica a todo el body*/\n  background-image: linear-gradient(to top, #DFE9F3  var(--grisClaro) 0%, var(--blanco) 100%);\n  /* El degradado del nuestro fondo, va desde abajo hasta arriba*/\n}\nh1{\nfont-size: 3.8rem;/* 1 rem = 10px */\n}\nh2{\n  font-size: 2.8rem;\n}\nh3{\n  font-size: 1.8rem;\n}\n\nh1,h2,h3{\n  text-align: center;\n}\n\n.titulo span {\n  font-size: 2rem;\n}\n\n.contenedor {\n  max-width: 120rem;\n  margin: 0 auto 0 auto;\n}\n\n.boton{\n  background-color: var(--secundario);\n  color: var(--blanco);\n  padding: 1rem 3rem; /*Tambien valdría 1rem(TOP) 3rem(RIGTH) 1rem(BOTTOM) 3rem(LEFTH)*/\n  margin-top: 1rem;\n  font-size: 2rem;\n  text-decoration: none;/*Elimina lineas por defecto*/\n  text-transform: uppercase;\n  font-weight: bold;\n  border-radius: .7rem;\n  width: 90%;\n  text-align: center;\n  border: none;\n}\n\n@media ( min-width: 768px){ \n   .boton{\n     width: auto;\n   }\n}\n\n.boton:hover{\n  cursor: pointer;\n}\n\n.sombra{\n  /*He cogido el código de cssmatic para crear sombra(Las tres lineas siguientes)\n  Además, podemos quitar las dos lineas primeras y funciona igual*/\n  -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.43);\n  -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.43);\n  box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.43);\n\n  background-color: var(--blanco);\n  padding: 2rem;\n  border-radius: 1rem;\n}\n/** Utilidades **/\n.w-sm-100{\n  width: 100%;\n}\n@media (min-width: 768px) {\n  .w-sm-100{\n    width: auto;\n  }\n}\n\n.alinear-derecha{\n  justify-content: flex-end;\n}\n\n.flex{\n  display: flex;\n}\n\n.nav-background {\n  background-color: var(--secundario);\n}\n\n.navegacion-principal {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  /*Inicio y Contacto van a los extremos*/\n}\n\n@media ( min-width: 768px){\n  .navegacion-principal{\n      flex-direction: row;\n  }\n}\n\n.navegacion-principal a {\n  display: block;\n  text-align: center;\n  color: var(--blanco);\n  text-decoration: none;\n  font-size: 2rem;\n  font-weight: bolder;\n  padding: 1rem;\n}\n\n.navegacion-principal a:hover {\n  background-color: var(--primario);\n  color: var(--obscuro);\n}\n\n.hero{\n  background-image: url(../img/home.png);\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 410px;\n  position: relative;\n  margin-bottom: 2rem;\n}\n.contenido-hero{\n  position: absolute;\n  background-color: rgb(0, 0, 0, .5); /*Intensidad de luz imagen*/\n  width: 100%;\n  height: 100%;\n  \n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.contenido-hero h2, .contenido-hero p{\n  color: var(--blanco);\n}\n.ubicacion{\n  display: flex;\n  align-items: flex-start;\n}\n\n\n/** Cursos **/\n@media (min-width: 768px) {\n  .cursos{\n    display: grid;\n    grid-template-columns: repeat(3, 1fr); /**  1fr 1fr 1 fr Es igual que poner 33.3%**/\n    column-gap: 1rem; /**Sepracaión entre columnas**/\n  }\n}\n\n.curso{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.curso h3{\n  color: var(--secundario);\n  font-weight: normal;\n}\n\n.curso p{\n  line-height: 2;\n  text-align: center;\n}\n\n.curso .imagen{\n  height: 15rem;\n  width: 15rem;\n  background-color: var(--primario);\n  border-radius: 50%;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n/** Contacto **/\n\n.formulario{\n  background-color: var(--gris);\n  width: min(60rem, 100%); /** Utiliza el valor más pequeño entre los valores que das**/\n  margin: 0 auto;\n  padding: 2rem;\n  border-radius: 1rem;\n}\n\n.formulario fieldset{\n  border: none;\n}\n\n.formulario legend{\n  text-align: center;\n  font-size: 1.8rem;\n  text-transform: uppercase;\n  font-weight: 700;\n  margin-bottom: 2rem;\n  color: var(--primario);\n}\n\n@media (min-width: 768px) {\n  .contenedor-campos{\n    display: grid;\n    grid-template-columns: 50% 50%;\n    grid-template-rows: auto auto 20rem;\n    column-gap: 1rem;\n  }\n  /**Con esto llamamos a los hijos del class llamado campo**/\n  .campo:nth-child(3),\n  .campo:nth-child(4){\n    grid-column: 1/3;\n  }\n}\n\n.contenedor-campos{\n  display: grid;\n  \n}\n\n.campo{\n  margin-bottom: 1rem;\n}\n\n.campo label{\n  color: var(--blanco);\n  font-weight: bold;\n  margin-bottom: .5rem;\n  display: block;\n}\n\n.campo textarea{\n  height: 18rem;\n}\n\n.input-text{\n  width: 100%;\n  border: none;\n  padding: 1.5rem;\n  border-radius: .5rem;\n}\n\n/** Footer **/\n\n.footer{\n  text-align: center;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Proyecto/css/style.css b/Proyecto/css/style.css
+--- a/Proyecto/css/style.css	
++++ b/Proyecto/css/style.css	
+@@ -11,15 +11,13 @@
+ 
+ html {
+   font-size: 62.5%;
++<<<<<<< HEAD
+   box-sizing: border-box;/*no afectara al padding en cualquier cambio futur*/
+   scroll-snap-type: y mandatory;
++=======
++  box-sizing: border-box;/*no afectara al padding en cualquier cambio futuro*/
++>>>>>>> parent of 9538b18 (version 0.045 scroll snap, css)
+ }
+-/** Scroll Snap, nos permite que al hacer scroll que se detenga en cada section que marquemos **/
+-.cursos, .navegacion-principal, .formulario{
+-  scroll-snap-align: center;
+-  scroll-snap-stop: always;
+-}
+-
+ *,*:before,*:after{ /*Selector * universal afecta a todos los elementos*/
+   box-sizing: inherit;
+ }
+@@ -167,8 +165,6 @@
+   display: flex;
+   align-items: flex-start;
+ }
+-
+-
+ /** Cursos **/
+ @media (min-width: 768px) {
+   .cursos{
