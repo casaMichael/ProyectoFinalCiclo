@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb6a25c4-0d95-45af-bb12-b448d54b0da6" name="Changes" comment="version 0.045 scroll snap, css" />
+    <list default="true" id="bb6a25c4-0d95-45af-bb12-b448d54b0da6" name="Changes" comment="actualización" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +55,7 @@
       <workItem from="1639909803582" duration="3691000" />
       <workItem from="1639927487406" duration="6982000" />
       <workItem from="1641290340416" duration="2565000" />
-      <workItem from="1641293064102" duration="451000" />
+      <workItem from="1641293064102" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="version 0.038">
       <created>1639913414830</created>
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641293115241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="actualización">
+      <created>1641293604591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641293604591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +135,7 @@
     <MESSAGE value="version 0.045 scroll snap" />
     <MESSAGE value="version 0.045 scroll snap, css" />
     <MESSAGE value="Revert &quot;version 0.045 scroll snap, css&quot;&#10;&#10;This reverts commit 9538b187" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;version 0.045 scroll snap, css&quot;&#10;&#10;This reverts commit 9538b187" />
+    <MESSAGE value="actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualización" />
   </component>
 </project>
