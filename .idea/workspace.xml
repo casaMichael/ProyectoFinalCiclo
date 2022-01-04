@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb6a25c4-0d95-45af-bb12-b448d54b0da6" name="Changes" comment="actualización">
-      <change beforePath="$PROJECT_DIR$/Proyecto/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Proyecto/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="bb6a25c4-0d95-45af-bb12-b448d54b0da6" name="Changes" comment="version 0.045" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,6 +141,7 @@
     <MESSAGE value="version 0.045 scroll snap, css" />
     <MESSAGE value="Revert &quot;version 0.045 scroll snap, css&quot;&#10;&#10;This reverts commit 9538b187" />
     <MESSAGE value="actualización" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualización" />
+    <MESSAGE value="version 0.045" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.045" />
   </component>
 </project>
