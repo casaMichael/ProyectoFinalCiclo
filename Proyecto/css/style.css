@@ -12,7 +12,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;/*no afectara al padding en cualquier cambio futuro*/
+  scroll-snap-type: y mandatory;
 }
+
+/** Scroll Snap nos permite parar en las secciones que queramos**/
+.cursos, .navegacion-principal, .formulario{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
 *,*:before,*:after{ /*Selector * universal afecta a todos los elementos*/
   box-sizing: inherit;
 }
